@@ -3,9 +3,6 @@
 #include <stdlib.h>
 #include <locale.h>
 
-/*criar uma função que salva em binario*/
-
-
 typedef struct biblio Biblio;
 
 struct biblio{
@@ -111,7 +108,6 @@ void inserir_livro (Lista* l){
     insercao(l, aux, ant, b);
  }
 
- //Erro nessa parte, gravação bizarra
 void gravar_arquivo (Lista* l){
     FILE* gravar;
     Biblio* aux=l->inicio;
